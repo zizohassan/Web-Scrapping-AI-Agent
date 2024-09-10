@@ -1,3 +1,5 @@
+![Screenshot of the app](image.png)
+
 # Web Scraping AI Agent
 
 This project is a Streamlit application that allows you to scrape a website using the OpenAI API. The application leverages the `SmartScraperGraph` from the `scrapegraphai.graphs` module to perform the scraping based on user input.
