@@ -1,0 +1,62 @@
+# Web Scraping AI Agent
+
+This project is a Streamlit application that allows you to scrape a website using the OpenAI API. The application leverages the `SmartScraperGraph` from the `scrapegraphai.graphs` module to perform the scraping based on user input.
+
+## Features
+
+- **User Input for URL**: Enter the URL of the website you want to scrape.
+- **User Prompt**: Specify what you want the AI agent to scrape from the website.
+- **Scraping**: Click the "Scrape" button to initiate the scraping process.
+- **Results Display**: The scraped results are displayed on the Streamlit app.
+
+## Configuration
+
+The application is configured to use the following models from Ollama:
+- **Language Model**: `ollama/llama3.1`
+- **Embeddings Model**: `ollama/nomic-embed-text`
+
+Both models are set to use the base URL `http://localhost:11434`.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone <repository-url>
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd <project-directory>
+    ```
+3. Create a virtual environment:
+    ```bash
+    python -m venv myenv
+    ```
+4. Activate the virtual environment:
+    - On Windows:
+        ```bash
+        .\myenv\Scripts\activate
+        ```
+    - On macOS/Linux:
+        ```bash
+        source myenv/bin/activate
+        ```
+5. Install the required packages:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+1. Run the Streamlit app:
+    ```bash
+    streamlit run main.py
+    ```
+2. Open your web browser and go to `http://localhost:8501`.
+3. Enter the URL of the website you want to scrape.
+4. Provide a prompt specifying what you want the AI agent to scrape from the website.
+5. Click the "Scrape" button to start the scraping process.
+6. View the results displayed on the app.
+
+## .gitignore
+
+The `.gitignore` file is configured to ignore the virtual environment directory:
